@@ -141,7 +141,7 @@ async function updateVisitorCount() {
         await setDoc(visitorDoc, {
             count: 20000
         });
-        visitorCountElement.textContent = 20000;
+        visitorCountElement.textContent = 225865;
     }
 }
 
