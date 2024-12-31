@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>New Year Countdown</h1>
+        <div id="countdown">
+            <span id="days"></span> Days 
+            <span id="hours"></span> Hours 
+            <span id="minutes"></span> Minutes 
+            <span id="seconds"></span> Seconds
+        </div>
+        <div id="message" class="hidden">
+            <h2 id="new-year-message">Happy New Year!</h2>
+            <p id="wish"></p>
+        </div>
+        <div class="fireworks">
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+            <div class="firework"></div>
+        </div>
+        <div id="confetti"></div>
+        <button id="music-toggle">Play Music</button>
+        <button id="restart">Reload Page</button>
+    </div>
+    <div id="stats">
+        <p>Visitors: <span id="visitor-count">0</span></p>
+        <p>Live Viewers: <span id="live-viewers">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
